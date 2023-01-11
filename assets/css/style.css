@@ -1,13 +1,64 @@
 body{
 
-    font-family: Arial;
+    font-family:Georgia, "Times New Roman", Times, serif; 
     color: black;
     background-color: #232323;
+    font-size: 13px;
+    margin:0; 
+    padding:0; 
 }
-.navbar{
+
+
+/* Nav Bar */
+.navbar, .navbar a{
     color: grey;
     background-color: black;
 }
+#header nav{
+    width:100%;
+    padding: 1.2500em 0;
+    border-bottom:1px solid red;
+}
+#header nav li{
+    display: inline;
+    margin-right: 1.5625em;
+    text-transform: uppercase;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+#header nav li a:hover{
+    color: red;
+}
+a{
+    text-decoration:none;
+}
+#header{
+    width: 900px;
+    margin: auto;
+}
+#header #logo h1, #header h2{
+    font-weight: normal;
+}
+
+
+
+
+/* Logo */
+#logo #header{
+    float: left;
+    font-size: 20px;
+}
+#logo h1{
+    font-size: 36px;
+}
+#logo h2{
+    font-size: 13px;
+}
+
+
+
 
 
 
