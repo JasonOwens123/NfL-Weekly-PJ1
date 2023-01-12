@@ -13,16 +13,18 @@ body{
 /* Nav Bar */
 .navbar, .navbar a{
     color: grey;
-    background-color: black;
+    background-color: #000;
 }
 #header nav{
+    display: block;
     width:100%;
-    padding: 1.2500em 0;
+    margin: 0;
+    padding: 20px 0;
     border-bottom:1px solid red;
 }
 #header nav li{
     display: inline;
-    margin-right: 1.5625em;
+    margin-right: 28px;
     text-transform: uppercase;
     line-height: 50px;
     font-size: 20px;
@@ -30,20 +32,19 @@ body{
 nav ul{
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 #header nav li a:hover{
     color: red;
 }
 a{
     text-decoration:none;
+    outline: none;
 }
-#header{
+#header #container{
     display: block;
-    width: 900px;
-    margin: auto;
-}
-#header #logo h1, #header h2{
-    font-weight: normal;
+    width: 960px;
+    margin: 0 auto;
 }
 
 
@@ -51,9 +52,10 @@ a{
 
 
 /* Logo */
-#logo #header{
+
+#header #logo{
     float: left;
-    font-size: 20px;
+    font-size: 20px 0;
 }
 #logo h1{
     font-size: 40px;
@@ -68,13 +70,27 @@ a{
     padding: 0;
     color: white;
 }
+#header #logo h1, #header h2{
+    font-weight: normal;
+    text-transform: none;
+}
 
 /* MainBody*/
-#watt figure img{
+#container #watt figure img{
     float: left;
-    width: 600px;
+    width: 630px;
     height: 300px;
 }
+/* Black Box */
+#container #watt figure figcaption{
+    float: right;
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+    color: #989898;
+    background-color: #000;
+    line-height:1.8em;
+}   
 .smallnews, .bignews{
     display: block;
     float: left;
@@ -84,7 +100,7 @@ a{
     width: 300px;
 }
 .bignews{
-    width: 600px;
+    width: 630px;
 }
 .boxes{
     display:block;
@@ -98,6 +114,45 @@ a{
     width: 100%;
     margin: 0 0 30px 0;
     padding: 0;
+}
+#container #mainbody{
+    display: block;
+    width: 100%;
+    line-height: 1.6em;
+}
+#container #mainbody .smallarticles{
+    margin: 0;
+    font-size: 12px;   
+}
+#container #mainbody .smallarticles article h2{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+}
+#container #mainbody .smallarticles article img{
+    float: left;
+    padding: 4px;
+    border: 1px solid white;
+}
+/* temp */
+#container .boxes{
+    /* display: block; */
+    /* width: 1200px; */
+    /* margin: 0 auto; */
+}
+#container #mainbody .smallarticles article p{
+    display: block;
+    float: right;
+    width: 200px;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/* right side of website */
+.lastbox{
+    margin-right: 0;
 }
 
 /* Footer*/
