@@ -41,10 +41,16 @@ a{
     text-decoration:none;
     outline: none;
 }
-#header #container{
+#header, #container{
     display: block;
-    width: 960px;
+    width: 1250px;
     margin: 0 auto;
+}
+.boxes::after{
+    content:"."; 
+    display:block; 
+    clear:both;
+    visibility:hidden;    
 }
 
 
@@ -78,8 +84,9 @@ a{
 /* MainBody*/
 #container #watt figure img{
     float: left;
-    width: 630px;
-    height: 300px;
+    width: 650px;
+    height: 320px;
+    margin-right: 50px;
 }
 /* Black Box */
 #container #watt figure figcaption{
