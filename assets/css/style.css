@@ -6,6 +6,7 @@ body{
     font-size: 13px;
     margin:0; 
     padding:0; 
+    
 }
 
 
@@ -88,6 +89,12 @@ a{
     height: 320px;
     margin-right: 50px;
 }
+figure{
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
 /* Black Box */
 #container #watt figure figcaption{
     float: right;
@@ -151,11 +158,23 @@ a{
     padding: 0;
     color: white;
 }
+#container #mainbody .spacer{
+    display: block;
+    width: 100%;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    clear: both;
+}
+
+/* fix later */
+/* #container #mainbody .smallarticles article footer{ */
+    /* padding-top:10px; */
+    /* clear: both; */
+
 
 /* right side of website */
-.lastbox{
-    margin-right: 0;
-}
+
 
 /* Footer*/
 #footer{
@@ -164,6 +183,11 @@ a{
 #footer p{
     margin:0;
     padding:0;
+    margin-left: 20px;
+}
+.bottom{
+    color: white;
+    background-color: #000;
 }
 
 
@@ -187,6 +211,17 @@ h1, h2{
     -1px 1px 0 #000,
     1px 1px 0 #000;
     
+}
+
+/* paragraph need to change */
+p{
+   
+    color: orange;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 
