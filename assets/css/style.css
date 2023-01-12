@@ -9,6 +9,7 @@ body{
 }
 
 
+
 /* Nav Bar */
 .navbar, .navbar a{
     color: grey;
@@ -23,6 +24,8 @@ body{
     display: inline;
     margin-right: 1.5625em;
     text-transform: uppercase;
+    line-height: 50px;
+    font-size: 20px;
 }
 nav ul{
     margin: 0;
@@ -51,11 +54,28 @@ a{
     font-size: 20px;
 }
 #logo h1{
-    font-size: 36px;
+    font-size: 40px;
+    color: grey;
+    padding-top: 10px;
+    margin: 0;
+    letter-spacing: 2px;
 }
 #logo h2{
     font-size: 13px;
+    margin: 0;
+    padding: 0;
+    color: white;
 }
+
+/* MainBody*/
+#watt figure img{
+    float: left;
+    width: 600px;
+    height: 300px;
+}
+
+
+
 
 
 
