@@ -92,12 +92,12 @@ a{
 #container #watt figure figcaption{
     float: right;
     width: 250px;
-    height: 250px;
+    height: 275px;
     padding: 20px;
     color: #989898;
     background-color: #000;
     line-height:1.8em;
-}   
+}  
 .smallnews, .bignews{
     display: block;
     float: left;
@@ -142,12 +142,7 @@ a{
     padding: 4px;
     border: 1px solid white;
 }
-/* temp */
-#container .boxes{
-    /* display: block; */
-    /* width: 1200px; */
-    /* margin: 0 auto; */
-}
+
 #container #mainbody .smallarticles article p{
     display: block;
     float: right;
