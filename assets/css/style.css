@@ -1,202 +1,199 @@
 body{
-
-    font-family:Georgia, "Times New Roman", Times, serif; 
-    color: black;
-    background-color: #232323;
-    font-size: 13px;
     margin:0; 
-    padding:0;    
+    padding:0; 
+    font-size:13px;
+    font-family:Georgia, "Times New Roman", Times, serif; 
+    color:black;
+    background-color:#232323; 
 }
 
-
-
-/* Nav Bar */
+/* nav bar */
 .navbar, .navbar a{
-    color: grey;
-    background-color: #000;
-}
-#header nav{
-    display: block;
-    width:100%;
-    margin: 0;
-    padding: 20px 0;
-    border-bottom:1px solid red;
-}
-#header nav li{
-    display: inline;
-    margin-right: 28px;
-    text-transform: uppercase;
-    line-height: 50px;
-    font-size: 20px;
+    color:grey;
+    background-color:black;
 }
 nav ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    margin:0;
+    padding:0; 
+    list-style:none; 
+}
+#header nav{
+    display:block;
+    width:100%;
+    margin:0;
+    padding:20px 0;
+    border-bottom:1px solid red;
+}
+
+#header nav li{
+    display:inline;
+    margin-right:25px;
+    text-transform:uppercase;
+    
+}
+#header nav li.last{
+    margin-right:0;
 }
 #header nav li a:hover{
-    color: red;
+    color:red;
+    background-color:black;
 }
-a{
-    text-decoration:none;
-    outline: none;
-}
-#header, #container{
-    display: block;
-    width: 1250px;
-    margin: 0 auto;
-}
-.boxes::after{
-    content:"."; 
-    display:block; 
-    clear:both;
-    visibility:hidden;    
-}
-
-
 
 /* Logo */
 
 #header #logo{
-    float: left;
-    font-size: 20px 0;
+    float:left;
+    padding:20px 0;
 }
-#logo h1{
-    font-size: 40px;
-    color: grey;
-    padding-top: 10px;
-    margin: 0;
-    letter-spacing: 2px;
+#header #logo h1, #header  h2{
+    font-weight:normal; 
+    text-transform:none;
 }
-#logo h2{
-    font-size: 13px;
-    margin: 0;
-    padding: 0;
-    color: white;
+#header #logo h1{
+    font-size:36px;
 }
-#header #logo h1, #header h2{
-    font-weight: normal;
-    text-transform: none;
-}
-
-/* MainBody*/
-#container #watt figure img{
-    float: left;
-    width: 650px;
-    height: 320px;
-    margin-right: 50px;
-}
-figure{
-    display: block;
-    margin: 0;
-    padding: 0;
+#header #logo h2{
+    font-size:13px;
 }
 
 /* Black Box */
+
 #container #watt figure figcaption{
-    float: right;
-    width: 250px;
-    height: 275px;
-    padding: 20px;
-    color: #989898;
-    background-color: #000;
+    display:block;
+    float:right;
+    width:260px;
+    height:260px; 
+    padding:20px; 
+    color:#989898;
+    background-color:black;
     line-height:1.8em;
-}  
+}
+
+/* MainBody */
+
+
+#header, #container{
+    display:block; 
+    width:960px; 
+    margin:0 auto;
+}
+figure{
+    display:block;
+    margin:0;
+    padding:0;
+}
 .smallnews, .bignews{
-    display: block;
-    float: left;
-    margin: 0 30px 0 0;
+    display:block;
+    float:left;
+    margin:0 30px 0 0;
 }
 .smallnews{
-    width: 300px;
+    width:300px;
 }
 .bignews{
-    width: 630px;
+    width:630px;
 }
-.boxes{
-    display:block;
+.lastbox{
+margin-right:0;
+}
+.boxes::after{
+    content:"."; 
+    display:block; 
+    height:0;
     clear:both;
+    visibility:hidden; 
+    line-height:0;
 }
 #container{
-    padding: 30px 0;
+    padding:30px 0;
 }
 #container section{
-    display: block;
-    width: 100%;
-    margin: 0 0 30px 0;
-    padding: 0;
+    display:block;
+    width:100%;
+    margin:0 0 30px 0;
+    padding:0;
+}
+#container .last{
+    margin:0;
+}
+#container #watt figure img{
+    float:left; width:630px;
+    height:300px;
+}
+
+#container #watt figure figcaption a{
+    color:orange;
+    background-color:black;
 }
 #container #mainbody{
-    display: block;
-    width: 100%;
-    line-height: 1.6em;
+    display:block;
+    width:100%; 
+    line-height:1.6em;
 }
 #container #mainbody .smallarticles{
-    margin: 0;
-    font-size: 12px;   
+    margin:0;
+    font-size:12px;
 }
 #container #mainbody .smallarticles article h2{
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: bold;
+    margin-bottom:10px;
+    text-transform:uppercase; 
+    font-size:14px;
+    font-weight:bold;
 }
 #container #mainbody .smallarticles article img{
-    float: left;
-    padding: 4px;
-    border: 1px solid white;
+    float:left;
+    padding:4px;
+    border:1px solid white;
 }
-
 #container #mainbody .smallarticles article p{
-    display: block;
-    float: right;
-    width: 200px;
-    margin: 0;
-    padding: 0;
-    color: white;
+    display:block; 
+    float:right;
+    width:200px;
+    margin:0; 
+    padding:0;
+    color: white;}
+#container #mainbody .smallarticles article footer{
+    padding-top:10px;
+    clear:both;
 }
 #container #mainbody .spacer{
-    display: block;
-    width: 100%;
-    height: 60px;
-    margin: 0;
-    padding: 0;
-    clear: both;
+    display:block; 
+    width:100%;
+    height:30px;
+    margin:0;
+    padding:0;
+    clear:both;
+}
+#container .more{
+    text-align:right;
+}
+.bottom, .bottom a{
+    color:white; 
+    background-color:black; 
+}
+.content a{
+    color:orange;
+    background-color:black;
+}
+a{
+    outline:none;
+    text-decoration:none;
 }
 
-/* fix later */
-/* #container #mainbody .smallarticles article footer{ */
-    /* padding-top:10px; */
-    /* clear: both; */
+/* Footer */
 
-
-/* right side of website */
-
-
-/* Footer*/
 #footer{
     padding:20px 0;
-    
 }
 #footer p{
     margin:0;
     padding:0;
-    margin-left: 20px;
 }
-.bottom{
-    color: white;
-    background-color: #000;
-    
+.copyright{
+    float:left;
 }
 
-
-
-
-
-
-
-/* Headings */
-h1, h2{
+h1, h2, h3, h4, h5, h6{
     margin:0;
     padding:0; 
     font-size:20px;
@@ -212,14 +209,111 @@ h1, h2{
     
 }
 
-/* paragraph need to change */
-p{ 
+
+
+
+
+#Romo {
+    color: orange;
+}
+#RomoP {
+    color: white;
+}
+#news {
+    color: white;
+}
+#newsH {
+    color: orange;
+}
+
+.statbody {
+    background-image: url(../images/superbowl.jpg);
+    background-size: cover;
+}
+p{
+   
     color: orange;
     text-shadow:
     -1px -1px 0 #000,
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000;
+}
+
+video {
+    display:block;
+    margin:0;
+    padding:0;
+    width:700px;
+    height:400px;
+    margin:0 auto;
+     column-fill: balance;
+    column-count: 3;
+}
+
+#columns {
+   column-fill:auto;
+    column-count: 3;
+}
+
+#columns3 {
+    column-fill: balance;
+    column-count: 3;
+}
+
+#AFC {
+    float: left;
+    font-size: 20px;
+     margin:0;
+    padding:0; 
+    font-size:20px;
+    font-weight:normal;
+    font-style:normal;
+    line-height:normal;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+#NFC {
+    float: right;
+    font-size: 20px;
+     margin:0;
+    padding:0; 
+    font-size:20px;
+    font-weight:normal;
+    font-style:normal;
+    line-height:normal;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.fixturebody {
+    background-image:url(../images/superbowl.jpg);
+    background-size: cover;
+}
+
+.bottomfixtures {
+    color:white; 
+    background-color:black;
+    margin-top: 150px;
+}
+
+h8 {
+    color: red;
+    font-size: 30px;
+}
+
+h9 {
+    color: blue;
+    font-size: 30px;
 }
 
 
