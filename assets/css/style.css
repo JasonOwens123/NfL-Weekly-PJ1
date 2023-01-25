@@ -5,8 +5,7 @@ body{
     background-color: #232323;
     font-size: 13px;
     margin:0; 
-    padding:0; 
-    
+    padding:0;    
 }
 
 
@@ -53,8 +52,6 @@ a{
     clear:both;
     visibility:hidden;    
 }
-
-
 
 
 
@@ -179,6 +176,7 @@ figure{
 /* Footer*/
 #footer{
     padding:20px 0;
+    
 }
 #footer p{
     margin:0;
@@ -188,6 +186,7 @@ figure{
 .bottom{
     color: white;
     background-color: #000;
+    
 }
 
 
@@ -214,8 +213,7 @@ h1, h2{
 }
 
 /* paragraph need to change */
-p{
-   
+p{ 
     color: orange;
     text-shadow:
     -1px -1px 0 #000,
