@@ -1,323 +1,374 @@
-body{
-    margin:0; 
-    padding:0; 
-    font-size:13px;
-    font-family:Georgia, "Times New Roman", Times, serif; 
-    color:black;
-    background-color:#232323; 
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: black;
+    background-color: #232323;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* nav bar */
-.navbar, .navbar a{
-    color:grey;
-    background-color:black;
-}
-nav ul{
-    margin:0;
-    padding:0; 
-    list-style:none; 
-}
-#header nav{
-    display:block;
-    width:100%;
-    margin:0;
-    padding:20px 0;
-    border-bottom:1px solid red;
+.navbar,
+.navbar a {
+    color: grey;
+    background-color: black;
 }
 
-#header nav li{
-    display:inline;
-    margin-right:25px;
-    text-transform:uppercase;
-    
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
-#header nav li.last{
-    margin-right:0;
+
+#header nav {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 20px 0;
+    border-bottom: 1px solid red;
 }
-#header nav li a:hover{
-    color:red;
-    background-color:black;
+
+#header nav li {
+    display: inline;
+    margin-right: 25px;
+    text-transform: uppercase;
+
+}
+
+#header nav li.last {
+    margin-right: 0;
+}
+
+#header nav li a:hover {
+    color: red;
+    background-color: black;
 }
 
 /* Logo */
 
-#header #logo{
-    float:left;
-    padding:20px 0;
+#header #logo {
+    float: left;
+    padding: 20px 0;
 }
-#header #logo h1, #header  h2{
-    font-weight:normal; 
-    text-transform:none;
+
+#header #logo h1,
+#header h2 {
+    font-weight: normal;
+    text-transform: none;
 }
-#header #logo h1{
-    font-size:36px;
+
+#header #logo h1 {
+    font-size: 36px;
 }
-#header #logo h2{
-    font-size:13px;
+
+#header #logo h2 {
+    font-size: 13px;
 }
 
 /* Black Box */
 
-#container #watt figure figcaption{
-    display:block;
-    float:right;
-    width:260px;
-    height:260px; 
-    padding:20px; 
-    color:#989898;
-    background-color:black;
-    line-height:1.8em;
+#container #watt figure figcaption {
+    display: block;
+    float: right;
+    width: 260px;
+    height: 260px;
+    padding: 20px;
+    color: #989898;
+    background-color: black;
+    line-height: 1.8em;
 }
 
 /* MainBody */
 
 
-#header, #container{
-    display:block; 
-    width:960px; 
-    margin:0 auto;
-}
-figure{
-    display:block;
-    margin:0;
-    padding:0;
-}
-.smallnews, .bignews{
-    display:block;
-    float:left;
-    margin:0 30px 0 0;
-}
-.smallnews{
-    width:300px;
-}
-.bignews{
-    width:630px;
-}
-.lastbox{
-margin-right:0;
-}
-.boxes::after{
-    content:"."; 
-    display:block; 
-    height:0;
-    clear:both;
-    visibility:hidden; 
-    line-height:0;
-}
-#container{
-    padding:30px 0;
-}
-#container section{
-    display:block;
-    width:100%;
-    margin:0 0 30px 0;
-    padding:0;
-}
-#container .last{
-    margin:0;
-}
-#container #watt figure img{
-    float:left; width:630px;
-    height:300px;
+#header,
+#container {
+    display: block;
+    width: 960px;
+    margin: 0 auto;
 }
 
-#container #watt figure figcaption a{
-    color:orange;
-    background-color:black;
+figure {
+    display: block;
+    margin: 0;
+    padding: 0;
 }
-#container #mainbody{
-    display:block;
-    width:100%; 
-    line-height:1.6em;
+
+.smallnews,
+.bignews {
+    display: block;
+    float: left;
+    margin: 0 30px 0 0;
 }
-#container #mainbody .smallarticles{
-    margin:0;
-    font-size:12px;
+
+.smallnews {
+    width: 300px;
 }
-#container #mainbody .smallarticles article h2{
-    margin-bottom:10px;
-    text-transform:uppercase; 
-    font-size:14px;
-    font-weight:bold;
+
+.bignews {
+    width: 630px;
 }
-#container #mainbody .smallarticles article img{
-    float:left;
-    padding:4px;
-    border:1px solid white;
+
+.lastbox {
+    margin-right: 0;
 }
-#container #mainbody .smallarticles article p{
-    display:block; 
-    float:right;
-    width:200px;
-    margin:0; 
-    padding:0;
-    color: white;}
-#container #mainbody .smallarticles article footer{
-    padding-top:10px;
-    clear:both;
+
+.boxes::after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
 }
-#container #mainbody .spacer{
-    display:block; 
-    width:100%;
-    height:30px;
-    margin:0;
-    padding:0;
-    clear:both;
+
+#container {
+    padding: 30px 0;
 }
-#container .more{
-    text-align:right;
+
+#container section {
+    display: block;
+    width: 100%;
+    margin: 0 0 30px 0;
+    padding: 0;
 }
-.bottom, .bottom a{
-    color:white; 
-    background-color:black; 
+
+#container .last {
+    margin: 0;
 }
-.content a{
-    color:orange;
-    background-color:black;
+
+#container #watt figure img {
+    float: left;
+    width: 630px;
+    height: 300px;
 }
-a{
-    outline:none;
-    text-decoration:none;
+
+#container #watt figure figcaption a {
+    color: orange;
+    background-color: black;
+}
+
+#container #mainbody {
+    display: block;
+    width: 100%;
+    line-height: 1.6em;
+}
+
+#container #mainbody .smallarticles {
+    margin: 0;
+    font-size: 12px;
+}
+
+#container #mainbody .smallarticles article h2 {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#container #mainbody .smallarticles article img {
+    float: left;
+    padding: 4px;
+    border: 1px solid white;
+}
+
+#container #mainbody .smallarticles article p {
+    display: block;
+    float: right;
+    width: 200px;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+#container #mainbody .smallarticles article footer {
+    padding-top: 10px;
+    clear: both;
+}
+
+#container #mainbody .spacer {
+    display: block;
+    width: 100%;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    clear: both;
+}
+
+#container .more {
+    text-align: right;
+}
+
+.bottom, .bottom a {
+    color: white;
+    background-color: black;
+}
+
+.content a {
+    color: orange;
+    background-color: black;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
 }
 
 /* Footer */
 
-#footer{
-    padding:20px 0;
-}
-#footer p{
-    margin:0;
-    padding:0;
-}
-.copyright{
-    float:left;
+#footer {
+  margin-top: auto;
+  padding: 20px;
 }
 
-h1, h2, h3, h4, h5, h6{
-    margin:0;
-    padding:0; 
-    font-size:20px;
-    font-weight:normal;
-    font-style:normal;
-    line-height:normal;
+#footer p {
+    margin: 0;
+    padding: 0;
+}
+
+.copyright {
+    float: left;
+}
+
+
+/* Parargarphs */
+
+h1, h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: normal;
     color: white;
     text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
-    
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+
 }
 
-
-
-
-
-#watts{
+#watts {
     color: orange;
 }
+
 #wattp {
     color: white;
 }
+
 #news {
     color: white;
 }
+
 #newsH {
     color: orange;
 }
 
 
-p{  
+p {
     color: orange;
     text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
 }
+
+/* Video */
 
 video {
-    display:block;
-    margin:0;
-    padding:0;
-    width:700px;
-    height:400px;
-    margin:0 auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 700px;
+    height: 400px;
+    margin: 0 auto;
     column-fill: balance;
     column-count: 3;
 }
 
-#columns {
-    column-fill:auto;
-    column-count: 3;
+/* Stats Body */
+.video{
+    height: 300px;
+    width: 600px;
 }
 
-#columns3 {
-    column-fill: balance;
-    column-count: 3;
+.divisons{
+    display: flex;
+    gap: 6rem;
+    align-items: center;
+    justify-content: center;
+    
+    
 }
 
-#AFC {
-    float: left;
-    font-size: 20px;
-    margin:0;
-    padding:0; 
-    font-size:20px;
-    font-weight:normal;
-    font-style:normal;
-    line-height:normal;
+.divisons li{
     color: white;
-    text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
-}
-
-#NFC {
-    float: right;
     font-size: 20px;
-    margin:0;
-    padding:0; 
-    font-size:20px;
-    font-weight:normal;
-    font-style:normal;
-    line-height:normal;
-    color: white;
-    text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
+
 }
 
 
-
-.bottomfixtures {
-    color:white; 
-    background-color:black;
-    margin-top: 600px;
+/* fix later */
+.signbody{
+    background-image: url();
 }
-
+/*  */
 h8 {
     color: red;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 h9 {
     color: blue;
-    font-size: 30px;
+    font-size: 40px;
 }
 
+.signup{
+    width: 400px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+    background: black;
+    padding: 20px;
+    margin: 8% auto 0;
+    text-align: center;
+    
 
+}
+.signup h1{
+    color: orange;
+}
+.inputbox{
+    color: grey;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    border: 1px solid red;
 
+}
+button{
+    color: grey;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid red;
+}
 
-
-
-
-
-
-
+.signbutton{
+    
+}
 
 
 
